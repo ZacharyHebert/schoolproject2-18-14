@@ -3,3 +3,6 @@ File: 		style.css
 Purpose:	Contains all external css for project. If multiple css files are created, edit this purpose.
 */
 
+.outputSig	{
+		margin-right:20px;
+	}
