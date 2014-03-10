@@ -17,31 +17,31 @@ Purpose: Contains all html for project.
     <script src="javascript.js"></script>
 </head>
 <body>    
-    <div id="container">
-		<h1>SBVC
-			<img src= "http://upload.wikimedia.org/wikipedia/en/5/52/San_Bernardino_Valley_College_logo.png" >
-		</h1>
-		
-		<div class="prompt">
-			<p>Instructions go here</p>
+<div id="container">
+	<h1>SBVC
+		<img src= "http://upload.wikimedia.org/wikipedia/en/5/52/San_Bernardino_Valley_College_logo.png" >
+	</h1>
+	
+	<div class="prompt">
+		<p>Instructions go here</p>
 
-            <form>
-				<input type="text" name="decimalValue" />
+		<form>
+			<input type="text" name="decimalValue" />
 
-                <button onclick="calculate( document.getElementsByName("decimalValue") )">Submit</button>
-            </form>
-		</div>
+			<button onclick="calculate( document.getElementsByName("decimalValue") )">Submit</button>
+		</form>
+	</div>
 
-		<br />
-		
+	<br />
+	
+	<div class="output">
 		<table> <!-- This table is to get the output name and the output in the same row -->
-		
+	
 			<tr>
-				<div class="output">
+				<div id="binary">
 					<td>
-						<div id="binary">
 						<span class="outputSig">
-						Binary Representation:
+							Binary Representation:
 						</span>
 					</td>
 
@@ -52,8 +52,7 @@ Purpose: Contains all html for project.
 
 								<button onclick="checkBin( document.getElementsByName("binaryValue") )">Check</button>
 							</form>
-						</div>
-				
+						</div>		
 					</td>
 
 					<td> 			
@@ -61,29 +60,31 @@ Purpose: Contains all html for project.
 					</td> 
 				</div>
 			</tr>
-			
+		
 			<br />
 
 			<tr>
 				<div id="onesCompliment">
-				<td><span class="outputSig">
-				One's Compliment:
-				</span> </td>
+					<td>
+						<span class="outputSig">
+							One's Compliment:
+						</span>
+					</td>
 
-				<td> <div id="output1C">
-				<form>
-				<input type="text" name="oneCValue" />
+					<td> <div id="output1C">
+					<form>
+					<input type="text" name="oneCValue" />
 
-				<button onclick="check1C( document.getElementsByName("oneCValue") )">Check</button>
-				</form>
+					<button onclick="check1C( document.getElementsByName("oneCValue") )">Check</button>
+					</form>
 
-				</div> </td>
+					</div> </td>
 		  
-				<td> 
+					<td> 
 			
-				<button onclick="showoneC( document.getelementByName ("oneCAnswer"))">Show</button>
+					<button onclick="showoneC( document.getelementByName ("oneCAnswer"))">Show</button>
 			
-				</td> 
+					</td> 
 			
 				</div>
 			</tr>
@@ -113,6 +114,7 @@ Purpose: Contains all html for project.
 				</div>
 			</tr>
 		</table>
-    </div>
+	</div>
+</div>
 </body>
 </html>
