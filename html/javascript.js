@@ -4,16 +4,24 @@ Purpose:	Contains all external javascript for project. If multiple javascript fi
 */
 
 var randNum=Math.floor((Math.random()*255)+1);
+
 var calculate(decimal){
 	
 };
-function dec2bin() { // found on javascriptkit.com
-var x = document.getElementById("deci").value;
-if ((/[^0-9]/g.test(x)) || x == "") {
-alert ("You must enter an integer decimal number!");
-document.getElementById("deci").value = "";
-document.getElementById("deci").focus();
-return false;
+
+// found on javascriptkit.com
+function dec2bin(){
+	var x = document.getElementById("deci").value;
+	
+	if ( ( /[^0-9]/g.test(x) ) || x == "" ){
+		alert ("You must enter an integer decimal number!");
+	}
+	
+	document.getElementById("deci").value = "";
+	
+	document.getElementById("deci").focus();
+	
+	return false;
 }
 
 //This is the javascript we used in class, but it needs editing 
