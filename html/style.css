@@ -7,7 +7,11 @@ Purpose:	Contains all external css for project. If multiple css files are create
 		margin-right:20px;
 	}
 
-body {background-color:Silver;}
+body	{
+		background-color:Silver;
+	}
 
-h1 {text-shadow: 5px 5px 5px #0033FF;
-font-size: 60px;}
+h1	{
+		text-shadow: 5px 5px 5px #0033FF;
+		font-size: 60px;
+	}
