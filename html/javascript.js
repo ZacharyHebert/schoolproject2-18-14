@@ -18,7 +18,7 @@ return false;
 
 //This is the javascript we used in class, but it needs editing 
 
-<script>
+
 		//define global variables 
 	var theDecimal = 0;
 	
@@ -83,4 +83,4 @@ function doSomething(){
 		if (n%1 === 0 && n > -1 && n < 256) return 1;
 		return 0;
 	}
-	</script>
+
