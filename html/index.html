@@ -7,8 +7,8 @@ Purpose: Contains all html for project.
 
 <!DOCTYPE html>
 <html>
-<head> 
-	<title>Project 1</title>
+<head>
+    <title>Project 1</title>
 
     <meta charset="UTF-8" />
 
@@ -18,97 +18,101 @@ Purpose: Contains all html for project.
 </head>
 <body>    
 <div id="container">
-	<h1>SBVC
-		<img src= "http://upload.wikimedia.org/wikipedia/en/5/52/San_Bernardino_Valley_College_logo.png" >
-	</h1>
-	
-	<div class="prompt">
-		<p>Instructions go here</p>
+    <h1>SBVC
+        <img src= "http://upload.wikimedia.org/wikipedia/en/5/52/San_Bernardino_Valley_College_logo.png" >
+    </h1>
+    
+    <div class="prompt">
+        <p>Instructions go here</p>
 
-		<span id="startNumber">startNumber</span>
-	</div>
+    <button id=”newProblem” onClick=”newProblem()”>New Problem</button>
 
-	<br />
-	
-	<div class="output">
-		<table> <!-- This table is to get the output name and the output in the same row -->
-			<tr>
-				<div id="binary">
-					<td>
-						<span class="outputSig">
-							Binary Representation:
-						</span>
-					</td>
+        <span id="startNumber">startNumber</span>
+    </div>
 
-					<td>
-						<div id="outputBin">
-							<form>
-								<input type="text" name="binaryValue" />
+    <br />
+    
+    <div class="output">
+        <table> <!-- This table is to get the output name and the output in the same row -->
+            <tr>
+                <div id="binary">
+                    <td>
+                        <span class="outputSig">
+                            Binary Representation:
+                        </span>
+                    </td>
 
-								<button onclick="checkBin( document.getElementsByName("binaryValue") )">Check</button>
-							</form>
-						</div>		
-					</td>
+                    <td>
+                        <div id="outputBin">
+                            <form>
+                                <input type="text" name="binaryValue" />
 
-					<td> 			
-						<button onclick="showBin( document.getelementByName ("binaryAnswer"))">Show</button>			
-					</td> 
-				</div>	
-			</tr>
-		
-			<br />
+                                <button onclick="checkBin( document.getElementsByName("binaryValue") )">Check</button>
+                            </form>
+                        </div>        
+                    </td>
 
-			<tr>
-				<div id="onesCompliment">
-					<td>
-						<span class="outputSig">
-							One's Compliment:
-						</span>
-					</td>
+                    <td>             
+                        <button onclick="showBin( document.getelementByName ("binaryAnswer"))">Show</button>            
+                    </td>
+                </div>    
+            </tr>
+        
+            <br />
 
-					<td>
-						<div id="output1C">
-							<form>
-								<input type="text" name="oneCValue" />
+            <tr>
+                <div id="onesCompliment">
+                    <td>
+                        <span class="outputSig">
+                            One's Compliment:
+                        </span>
+                    </td>
 
-								<button onclick="check1C( document.getElementsByName("oneCValue") )">Check</button>
-							</form>
-						</div>
-					</td>
-		  
-					<td> 
-						<button onclick="showoneC( document.getelementByName ("oneCAnswer"))">Show</button>
-					</td> 
-				</div>
-			</tr>
-			
-			<br />
+                    <td>
+                        <div id="output1C">
+                            <form>
+                                <input type="text" name="oneCValue" />
 
-			<tr>
-				<div id="twosCompliment">
-					<td>
-						<span class="outputSig">
-							Two's Compliment:
-						</span>
-					</td>
+                                <button onclick="check1C( document.getElementsByName("oneCValue") )">Check</button>
+                            </form>
+                        </div>
+                    </td>
+          
+                    <td>
+                        <button onclick="showoneC( document.getelementByName ("oneCAnswer"))">Show</button>
+                    </td>
+                </div>
+            </tr>
+            
+            <br />
 
-					<td>
-						<div id="output2C">
-							<form>
-								<input type="text" name="twoCValue" />
+            <tr>
+                <div id="twosCompliment">
+                    <td>
+                        <span class="outputSig">
+                            Two's Compliment:
+                        </span>
+                    </td>
 
-								<button onclick="check2C( document.getElementsByName("twoCValue") )">Check</button>
-							</form>
-						</div>
-					</td>
-			
-					<td> 
-						<button onclick="showtwoC( document.getelementByName ("twoCAnswer"))">Show</button>
-					</td> 
-				</div>
-			</tr>
-		</table>
-	</div>
+                    <td>
+                        <div id="output2C">
+                            <form>
+                                <input type="text" name="twoCValue" />
+
+                                <button onclick="check2C( document.getElementsByName("twoCValue") )">Check</button>
+                            </form>
+                        </div>
+                    </td>
+            
+                    <td>
+                        <button onclick="showtwoC( document.getelementByName ("twoCAnswer"))">Show</button>
+                    </td>
+                </div>
+            </tr>
+        </table>
+    </div>
 </div>
 </body>
 </html>
+
+
