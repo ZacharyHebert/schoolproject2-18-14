@@ -36,24 +36,24 @@ function newProblem(){
 }
 
 function doSomething(){
-var myNumber = document.getElementById("theInput").value;
-var binaryString; 
-var tempString = "";
-var carry = 1;
-var count = 7;
-if (isInteger(myNumber))
-	{
+	var myNumber = document.getElementById("theInput").value;
+	var binaryString; 
+	var tempString = "";
+	var carry = 1;
+	var count = 7;
+	if (isInteger(myNumber)){
 	
-//display binary
-	binaryString = parseInt(myNumber).toString(2);  
-	while(binaryString.length < 8) binaryString = "0"+binaryString;
-	tempString = binaryString.substr(0,4).concat("&nbsp;",binaryString.substr(4));
-	document.getElementById("binNum").innerHTML = tempString;
+		//display binary
+		binaryString = parseInt(myNumber).toString(2);  
+		while(binaryString.length < 8) binaryString = "0"+binaryString;
+		tempString = binaryString.substr(0,4).concat("&nbsp;",binaryString.substr(4));
+		document.getElementById("binNum").innerHTML = tempString;
 
-//display ones complement
-	tempString="";														for(var i=0; i<8; i++){
-		if(binaryString.charAt(i) === '0') tempString = tempString+"1";
-		else tempString=tempString + "0";
+		//display ones complement
+		tempString="";
+		for(var i=0; i<8; i++){
+			if(binaryString.charAt(i) === '0') tempString = tempString+"1";
+			else tempString=tempString + "0";
 		}
 	binaryString=tempString;
 	tempString="";
