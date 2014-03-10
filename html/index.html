@@ -37,26 +37,28 @@ Purpose: Contains all html for project.
 		<table> <!-- This table is to get the output name and the output in the same row -->
 		
 			<tr>
-			  <div class="output">
-				<td> <div id="binary">
-				  <span class="outputSig">
-					Binary Representation:
-				  </span> </td>
+				<div class="output">
+					<td>
+						<div id="binary">
+						<span class="outputSig">
+						Binary Representation:
+						</span>
+					</td>
 
-				<td> <div id="outputBin">
-				<form>
-				  <input type="text" name="binaryValue" />
+					<td>
+						<div id="outputBin">
+							<form>
+								<input type="text" name="binaryValue" />
 
-					<button onclick="checkBin( document.getElementsByName("binaryValue") )">Check</button>
-				</form>
+								<button onclick="checkBin( document.getElementsByName("binaryValue") )">Check</button>
+							</form>
+						</div>
+				
+					</td>
 
-				</div> </td>
-
-				<td> 
-			
-				<button onclick="showBin( document.getelementByName ("binaryAnswer"))">Show</button>
-			
-				</td> 
+					<td> 			
+						<button onclick="showBin( document.getelementByName ("binaryAnswer"))">Show</button>			
+					</td> 
 				</div>
 			</tr>
 			
@@ -85,6 +87,7 @@ Purpose: Contains all html for project.
 			
 				</div>
 			</tr>
+			
 			<br />
 
 			<tr>
