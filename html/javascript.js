@@ -24,6 +24,9 @@ function dec2bin(){
     return false;
 }
 
+testAlert(){
+    alert (“working”);
+}
 
 //This is the javascript we used in class, but it needs editing
 
@@ -36,7 +39,7 @@ function newProblem(){
 }
 
 function doSomething(){
-    var myNumber = document.getElementById("theInput").value;
+    var myNumber = theDecimal;
     var binaryString;
     var tempString = "";
     var carry = 1;
